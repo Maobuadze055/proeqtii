@@ -525,6 +525,12 @@ footer {
 	.links{
 		margin-left: 0;
 	}
+	.hotel{
+		display: none;
+	}
+	.travel1{
+		display: none;
+	}
 }
 @media only screen and (max-width: 480px){
 	.divbox , .blue, .boxblack, .roomhotel , .beautiful, .spring, .container{
