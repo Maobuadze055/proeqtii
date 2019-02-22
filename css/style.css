@@ -7,8 +7,9 @@ body, html{
 	max-width:100%;	
 }
 .divbox{
-	width:1170px;
+	max-width:1170px;
 	margin:0 auto;
+	width: 100%;
 }
 
 .logo{
@@ -34,9 +35,6 @@ body, html{
 	margin-right:0;
 }
 .burger{
-	position: absolute;
-    top: 6%;
-    left: 98%;
     display:none;
 }
 .fa-bars{
@@ -97,33 +95,33 @@ body, html{
 }
 .blue{
 	margin:0 auto;
-	width:1100px;
-	height:120px;
+	max-width:1100px;
+	width: 100%;
+	padding-bottom: 20px;
 	background-color:#4E26FD;
 	margin-top:50px;
 }
 .divblack{
-	margin-left:20px;
 	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .boxblack{
 	background-color:#000;
-	height:105px;
 	width: 1100px;
+	padding: 0 10px;
 }
 .box{
-	width:270px;
-	height:210px;
+	width:20%;
+	padding:30px 0;
 }
 .texti{
 	color:#000;
 	background-color:#fff;
-	width:200px;
-	height:50px;
-	line-height:50px;
-	padding:0 10px;
+	margin-right: 4%;
 	font-size:17px;
-	margin-top:30px;
+	padding:17px 0 17px 10px;
+	border:2px solid #fff;
 }
 .texti:hover{
 	border:2px solid #4E26FD;
@@ -131,13 +129,15 @@ body, html{
 .texti1{
 	background-color:#4E26FD;
 	color:#fff;
+	border:2px solid #4E26FD;
 }
 .texti1:hover{
 	border:2px solid #fff;
 }
 /*/section blackbox/*/
 .roomhotel{
-	width: 80%;
+	max-width: 1100px
+	width: 100%;
 	margin:0 auto;
 }
 .hotel{
@@ -156,6 +156,9 @@ body, html{
 }
 .travel{
 	display:flex;
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
 }
 .image{
 	margin-top:25px;
@@ -170,7 +173,6 @@ body, html{
 	font-size:16px;
 }
 .image1{
-	
     margin-top: 100px;
     margin:15px;
     display: flex;
@@ -180,12 +182,17 @@ body, html{
 .image1:first-child{
 	margin-left:0;
 }
+.solid {
+	transition: all 0.3s ease;
+}
 .solid:hover{
 	border:2px solid #92C6F4;
 }
 .travel1{
 	margin:0 auto;
 	display:flex;
+	max-width: 1100px;
+	width: 100%;
 }
 .more {
 	display: flex;
@@ -257,7 +264,6 @@ body, html{
 	width:20%;
 }
 .wrapabsolute{
-	position:absolute;
 	margin-top:480px;
 	font-size:14px;
 	color:#fff;
@@ -372,7 +378,8 @@ body, html{
 }
 .spring{
 	display:flex;
-	width:80%;
+	max-width: 1100px;
+	width:100%;
 	margin:0 auto;
 }
 .imgspring{
@@ -399,15 +406,16 @@ body, html{
 .moreh2:hover{
 	border:2px solid #99D1FF;
 }
-.container{
+footer {
 	background-color:#252525;
-	max-width:100%;
+}
+.container{
+	
+	max-width:1100px;
+	margin:0 auto;
+	width: 100%;
 	height:300px;
 	margin-top:50px;
-}
-.footer-wrapper {
-	width: 1100px;
-	margin:0 auto;
 }
 .footerimg{
 	width:100px;
@@ -468,236 +476,137 @@ body, html{
 }
 /*/responsive/*/
  
-@media only screen and (max-width: 1050px){
-	.navigation-ul{
+@media only screen and (max-width: 1200px){
+	.divbox , .blue, .boxblack, .roomhotel , .beautiful, .spring, .container{
+		max-width: 760px;
+	}
+	.beautifulimg2{
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    margin: 0 20px;
+	}
+	.social{
 		display: none;
 	}
-	.banner-text{
-		top:8%;
+	.bigsize{
+		font-size: 30px;
 	}
-	.baner-text2{
-		top:8%;
+	.wrapabsolute{
+		margin-left: 0;
+	}
+	.ulabsolute, .ulabsolute1{
+		left: 20%;
+	}
+	.navigation-ul{
+		display: none;
 	}
 	.burger{
 		display: inline-block;
 	}
+	.spring{
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (max-width: 1024px){
+	.divbox , .blue, .boxblack, .roomhotel , .beautiful, .spring, .container{
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+	.imgspring{
+		margin-right: 0;
+	}
+	.links{
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 480px){
+	.divbox , .blue, .boxblack, .roomhotel , .beautiful, .spring, .container{
+		width: 100%;
+	}
+	.divbox1{
+		width: 100%;
+	}
+	.room {
+		display: none;
+	}
+	.banner-text{
+		font-size: 40px;
+		margin-top: 0;
+	}
+	.banner-text2{
+		font-size: 40px;
+		color: #fff;
+		text-align: center;
+	}
 	.blue{
 		background-color: lightblue;
+	}
+	.box {
+		width: 100%;
+	}
+	.boxblack{
+		width: 100%;
+	}
+	.travel {
+		flex-wrap: wrap;
+	}
+	.image {
+		margin: 15px 0;
+	}
+	.travel1{
+		flex-wrap: wrap;
 	}
 	.texti{
 		color:lightblue;
 	 }
-	}
-@media only screen and( max-width:900px){
-	.blue{
-		display:none;
-	}
-}
-@media screen and (min-width: 600px) {
-  .banner-text {
-    font-size: 50px;
-  }
-  .banner-text2{
-  	font-size:50px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .banner-text {
-    font-size: 30px;
-  }
-  .banner-text2{
-  	font-size:30px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .banner {
-  	 width: 100%;
-     padding: 15px;
-  }
-}
-@media screen and (max-width: 600px){
-	.baner1{
-		 display: none;
-	}
-	.baner2{
-         display:none;
-	}
-}
-@media only screen and (max-width: 600px) {
-  .boxblack {background:lightcyan;}
-}
-@media only screen and (min-width: 600px) {
-  .boxblack {background:silver;}
-}
-@media only screen and (min-width: 768px) {
-  .boxblack {background:skyblue;}
-} 
-@media only screen and (min-width: 992px) {
-  .boxblack {background:beige;}
-} 
-@media only screen and (min-width: 1100px) {
-  .boxblack {background:black;}
-} 
-@media only screen and(max-width:400px;){
-	.boxblack{
-		display:none;
-	}
-}
-@media screen and (min-width: 700px) {
-  .hotelh1 {
-    font-size: 40px;
-  }
-  .hotelh2{
-  	font-size:40px;
-  }
-}
-@media screen and (max-width: 580px) {
-  .hotel{
-  	display: none;
-  }
-}
-@media screen and (max-width: 800px) {
-  .travel {
-    flex-wrap:wrap;
-    margin-top: 20px;
-  }
-  .travel1{
-    flex-wrap:wrap;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .travel1{
-    display: none;
-  }
-}
-@media screen and (max-width: 800px) {
-  .more{
-    display: none;
-  }
-}
-@media only screen and (max-width:800px;){
-	.image{
-       flex-wrap: wrap;
-	}
-}
-@media only screen and(max-width: 800px){
-	.snowbg{
-		flex-wrap:wrap;
-	}
-}
-@media only screen and(max-width: 800px){
-	.snowbg1{
-		flex-wrap:wrap;
-	}
-}
-@media only screen and(max-width: 800px){
-	.snowbg2{
-		flex-wrap:wrap;
-	}
-}
-@media only screen and(max-width: 800px){
-	.snowbg3{
-		flex-wrap:wrap;
-	}
-}
-@media only screen and(max-width: 800px){
-	.snowbg4{
-		flex-wrap:wrap;
-	}
-}
-@media only screen and(min-width: 600px;){
-	.bigsize{
-		font-size:80px;
-	}
-}
-@media only screen and(max-width:600px;){
-	.bigsize{
-		font-size:30px;
-	}
-}
-@media only screen and(min-width: 600px;){
-	.bigsize{
-		display:none;
-	}
-}
-@media only screen and(max-width:600px;){
-	.bigsize{
-		display:none;
-	}
-}
-@media screen and (min-width: 600px) {
-  .deluxeh1 {
-    font-size: 50px;
-  }
-  .deluxeh11{
-  	font-size:50px;
-  }
-}
-@media screen and (max-width: 600px) {
-	.deluxeh1 {
-    font-size: 30px;
-  }
-  .deluxeh11{
-  	font-size:30px;
-  }
-}
-@media screen and (max-width: 800px){
-	.beautifulimg2{
-		margin-right: 65%;
-		width: 35%;
-	}
-}
-@media screen and (max-width: 800px){
+	 .wrap{
+	 	flex-wrap: wrap;
+	 }
+	 .snowbg ,.snowbg1,.snowbg2, .snowbg3, .snowbg4{
+	 	width:100%;
+	 }
+	 .wrapabsolute{
+	 	text-align: center;
+	 	display: flex;
+	 	align-items: center;
+	 	justify-content: center;
+	 	flex-direction: column;
+	 }
+	.beautiful{
+		width:100%;
+		flex-wrap: wrap;
+	} 
 	.wrapper{
+		text-align: center;
+	}
+	.ulabsolute{
+		left:50%;
+		transform: translateX(-50%);
+		font-size: 40px;
+		text-align: left;
+	}
+	.ulabsolute1{
+		left:50%;
+		transform: translateX(-50%);
+		text-align: left;
+	}
+	.beautifulimg2{
 		display: none;
 	}
-}
-@media screen and (min-width: 600px) {
-  .ulabsolute {
-    font-size: 80px;
-  }
-  .ulabsolute1{
-  	font-size:20px;
-  }
-}
-@media screen and (max-width: 600px) {
-	.ulabsolute {
-    font-size: 40px;
-  }
-  .ulabsolute1{
-  	margin-top:80px;
-  	font-size:10px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .fromh1 {
-    font-size: 80px;
-  }
-}
-@media screen and (max-width: 600px) {
-	.fromh1 {
-    font-size: 40px;
-    color:blue;
-  }
-}
-@media screen and (max-width: 800px) {
-  .spring {
-    flex-wrap:wrap;
-  }
-}
-@media screen and (max-width: 400px) {
-   .imgspring:last-child{
-   	display: none;
-  }
-}
-@media screen and (max-width: 800px) {
-  .links-navigation {
-    display:none;
-  }
-}
-@media screen and (max-width: 800px) {
-	.footer-wrapper{
-		background-color:#4f6363;
+	.fromh1{
+		font-size: 40px;
 	}
-  }
+	.links-navigation{
+		display: none;
+	}
+	.Copyright{
+		margin-left: 0;
+	}
+	.image1{
+		margin:0;
+	}
+}
