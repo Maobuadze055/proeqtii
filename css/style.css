@@ -504,6 +504,9 @@ footer {
 	}
 	.burger{
 		display: inline-block;
+		position: absolute;
+		left: 98%;
+		top:8%;
 	}
 	.spring{
 		flex-wrap: wrap;
